@@ -15,7 +15,7 @@ export class WeatherserviceService {
     return this.http.get<WeatherData>(environment.baseUrl,{
     params: new HttpParams()
       .set('q',cityName)
-      .set('appid',environment.appid)
+      .set('appid','b9c64f1de7f8282e174091b7807dbde0')
     })
   }
 }
