@@ -7,8 +7,8 @@
 
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
-    <img src="../assets/cold.jpg" alt="cold" *ngIf="(weatherData.main.temp)-273.15 < 15">
-    <img src="../assets/hot.png" alt="hot" *ngIf="(weatherData.main.temp)-273.15 >=15">
+    <img src="/assets/cold.jpg" alt="cold" *ngIf="(weatherData.main.temp)-273.15 < 15">
+    <img src="/assets/hot.png" alt="hot" *ngIf="(weatherData.main.temp)-273.15 >=15">
    <div class="weather-data">
     <div class="location">{{ weatherData.name }}</div>
     <div class="temperature">{{(weatherData.main.temp)-273.15 | number: '1.0-0'}}°C</div>
@@ -22,7 +22,7 @@
     <div class="more-info-container">
       <div class="inf0-block">
         <div class="info-block-label">
-          <img src="../assets/min.avif">
+          <img src="/assets/min.avif">
           <span>min</span>
         </div>
         <div class="info-block-value">
@@ -31,7 +31,7 @@
       </div>
       <div class="inf0-block">
         <div class="info-block-label">
-          <img src="../assets/max.jpg">
+          <img src="/assets/max.jpg">
           <span>max</span>
         </div>
         <div class="info-block-value">
@@ -39,7 +39,7 @@
         </div>
       </div>  <div class="inf0-block">
         <div class="info-block-label">
-          <img src="../assets/humidity.png">
+          <img src="/assets/humidity.png">
           <span>humidity</span>
         </div>
         <div class="info-block-value">
@@ -47,7 +47,7 @@
         </div>
       </div>  <div class="inf0-block">
         <div class="info-block-label">
-          <img src="../assets/wind.jpg">
+          <img src="/assets/wind.jpg">
           <span>wind</span>
         </div>
         <div class="info-block-value">
@@ -66,7 +66,7 @@
 
 <!-- <div class="container">
   <div class="upper-data">
-    <img src="../assets/cold.jpeg" alt="cold" *ngIf="14 >15">
+    <img src="/assets/cold.jpeg" alt="cold" *ngIf="14 >15">
     <img src="../assets/hot.png" alt="hot" *ngIf="14 <= 15">
    <div class="weather-data">
     <div class="location">Bengaluru</div>
